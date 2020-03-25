@@ -1,2 +1,3 @@
 # config_files
-Configuration files for development environment
+
+Copy files to $HOME directory
