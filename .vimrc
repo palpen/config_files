@@ -1,3 +1,6 @@
+" Vim 8.0
+" Package manager: vim-plug
+
 set number
 set linebreak
 set showbreak=+++
@@ -24,11 +27,10 @@ color desert
 set updatetime=100  " for vim-gitgutter
 syntax on
 
-" vim-plug package manager
+" External packages
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 call plug#end()
-
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
