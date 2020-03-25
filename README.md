@@ -3,7 +3,7 @@
 Create symbolic links from repository contents to $HOME directory:
 
 ```
-ln -s ~/config\_files/.vimrc ~/.vimrc
-ln -s ~/config\_files/.tmux.conf ~/.tmux.conf
+ln -s ~/config_files/.vimrc ~/.vimrc
+ln -s ~/config_files/.tmux.conf ~/.tmux.conf
 ```
 
