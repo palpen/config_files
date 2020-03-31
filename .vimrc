@@ -27,13 +27,18 @@ color desert
 set updatetime=100  " for vim-gitgutter
 syntax on
 
-" External packages
+" External packages managed using vim-plug
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" move among buffers with CTRL
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>
+
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
