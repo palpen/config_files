@@ -5,6 +5,7 @@ set number
 set linebreak
 set showbreak=+++
 set textwidth=100
+set colorcolumn=80
 set showmatch
 set visualbell
 set hlsearch
