@@ -49,3 +49,15 @@ fun! TrimWhitespace()
     keeppatterns %s/\s\+$//e
     call winrestview(l:save)
 endfun
+
+" Copy paths current file to system clipboard
+fun! CopyRelPath()
+    let @+ = expand("%")
+endfun
+fun! CopyAbsPath()
+    let @+ = expand("%:p")
+endfun
+fun! CopyFilename()
+    let @+ = expand("%:t")
+endfun
+
