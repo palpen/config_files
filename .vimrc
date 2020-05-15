@@ -1,11 +1,11 @@
 " Vim 8.0
 " Package manager: vim-plug
 
+" === Basic settings ===
 set number
 set linebreak
 set showbreak=+++
 set textwidth=100
-set colorcolumn=80
 set showmatch
 set visualbell
 set hlsearch
@@ -25,13 +25,32 @@ set undolevels=1000
 set backspace=indent,eol,start
 set belloff=all
 color desert
-set updatetime=100  " for vim-gitgutter
 syntax on
+
+
+" === Third-party packages and settings ===
 
 " External packages managed using vim-plug
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 call plug#end()
+
+" for vim-gitgutter
+set updatetime=100
+
+
+" === Misc. aesthetics ===
+
+" Highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+" Color column 80
+" To turnoff, set cc=
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" === Shortcuts ===
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
@@ -40,9 +59,8 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 map <C-J> :bnext<CR>
 map <C-K> :bprev<CR>
 
-" Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+
+" === Functions ===
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
