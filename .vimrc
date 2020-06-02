@@ -67,6 +67,8 @@ fun! TrimWhitespace()
     keeppatterns %s/\s\+$//e
     call winrestview(l:save)
 endfun
+" Trim whitespace upon writing file to disk
+autocmd BufWritePre * :call TrimWhitespace()
 
 " Copy paths current file to system clipboard
 fun! CopyRelPath()
