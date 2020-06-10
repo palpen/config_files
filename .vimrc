@@ -24,6 +24,7 @@ set ruler
 set undolevels=1000
 set backspace=indent,eol,start
 set belloff=all
+set copyindent
 color desert
 syntax on
 
@@ -54,6 +55,10 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" <Ctrl-c> and <Ctrl-v> to copy and paste from clipboard
+vnoremap <C-c> :w !pbcopy<CR><CR>
+noremap <C-v> :r !pbpaste<CR><CR>
 
 " move among buffers with CTRL
 map <C-J> :bnext<CR>
