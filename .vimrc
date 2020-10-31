@@ -51,7 +51,7 @@ match ExtraWhitespace /\s\+$/
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-" === Shortcuts ===
+" === Shortcuts and other key mappings ===
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
@@ -62,6 +62,11 @@ vnoremap <C-c> :w !pbcopy<CR><CR>
 " move among buffers with CTRL
 map <C-J> :bnext<CR>
 map <C-K> :bprev<CR>
+
+" Remap command keys
+
+command! W :w
+command! Q :q
 
 
 " === Functions ===
