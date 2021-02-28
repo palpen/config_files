@@ -7,6 +7,8 @@ Create symbolic links from repository contents to the $HOME directory:
 ```
 ln -s ~/config_files/.vimrc ~/.vimrc
 ln -s ~/config_files/.tmux.conf ~/.tmux.conf
+ln -s ~/config_files/.zshrc ~/.zshrc
+ln -s ~/config_files/zsh_profiles ~/zsh_profiles
 ```
 
 For the `.vimrc` to work properly, download and install `vim-plug` [here](https://github.com/junegunn/vim-plug).
