@@ -9,7 +9,7 @@ ln -s ~/config_files/.vimrc ~/.vimrc
 ln -s ~/config_files/.tmux.conf ~/.tmux.conf
 ln -s ~/config_files/.zshrc ~/.zshrc
 ln -s ~/config_files/zsh_profiles ~/zsh_profiles
-ln -s ~/personal/config_files/palermo.zsh-theme ~/.oh-my-zsh/themes/palermo.zsh-theme
+ln -s ~/config_files/palermo.zsh-theme ~/.oh-my-zsh/themes/palermo.zsh-theme
 ```
 
 For the `.vimrc` to work properly, download and install `vim-plug` [here](https://github.com/junegunn/vim-plug).
