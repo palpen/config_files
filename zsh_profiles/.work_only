@@ -1,0 +1,6 @@
+# Aliases and custom settings for work laptop (do not version control!)
+
+# open work related applications
+AP='/Applications'
+alias work="open $AP/Microsoft\ Outlook.app $AP/Microsoft\ OneNote.app $AP/Microsoft\ Teams.app"
+
