@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
 
 # setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
@@ -72,7 +70,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zshmarks zsh-autosuggestions)
+plugins=(zsh-autosuggestions)
+
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
 
 source $ZSH/oh-my-zsh.sh
 
