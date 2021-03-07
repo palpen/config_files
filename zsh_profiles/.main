@@ -3,7 +3,9 @@
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/palermopenano/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)" if [ $? -eq 0 ]; then
+__conda_setup="$('/Users/palermopenano/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+
+if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
     if [ -f "/Users/palermopenano/miniconda3/etc/profile.d/conda.sh" ]; then
@@ -53,7 +55,7 @@ alias l="showmarks"
 alias gc="git commit -m"
 alias gst="git status"
 alias ga="git add"
-alias ghp="git push"
+alias gph="git push"
 alias gdf="git diff"
 
 
