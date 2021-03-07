@@ -3,8 +3,7 @@
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/palermopenano/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
+__conda_setup="$('/Users/palermopenano/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)" if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
     if [ -f "/Users/palermopenano/miniconda3/etc/profile.d/conda.sh" ]; then
@@ -63,22 +62,23 @@ jnssh() {
     # to local port. This allows you to work on a jupyter notebook locally
     # on a remote computer.
 
-    # To avoid having to enter passwords, copy public key to host computer
+    # To avoid having to enter passwords, copy public key to remote computer
     # by copying LOCAL_HOME/.ssh/id_rsa.pub to a file named REMOTE_HOME/.ssh/authorized_keys
     # See https://stackoverflow.com/questions/3828164/how-do-i-access-my-ssh-public-key
 
     # Requirements:
     # 1. miniconda
-    # 2. jupyter lab
+    # 2. jupyter
 
     # Usage:
-    # jupyssh <project path in remote machine> <project environment name in remote machine>
-    # e.g. jupyssh ~/Dropbox/data_science/fastai_deeplearning/pt1/fastai fastai
+    # jnssh <project path in remote machine> <conda environment name in remote machine>
+    # e.g. jnssh ~/Dropbox/data_science/fastai_deeplearning/pt1/fastai fastai
+    # Notebook can be opened in local browser at http://localhost:8887
 
     # Information from remote computer
-    ANACONDA_PATH=$HOME/miniconda3
-    USER=         # !!! TODO remote computer username
-    IPADDRESS=    # !!! TODO remote computer ip
+    ANACONDA_PATH=/home/pspenano/miniconda3          # TODO path to miniconda3 dir
+    USER=''                                          # TODO username
+    IPADDRESS=                                       # TODO ip
 
     projectpath=$1
     envname=$2
