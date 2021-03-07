@@ -75,16 +75,19 @@ jnssh() {
 
     # Usage:
     # jnssh <project path in remote machine> <conda environment name in remote machine>
-    # e.g. jnssh ~/Dropbox/data_science/fastai_deeplearning/pt1/fastai fastai
+    # If you are using tiled, ~, as shortcut for the HOME path, you must use quotes
+    # e.g. jnssh "~/personal/ds_project" ds_project
     # Notebook can be opened in local browser at http://localhost:8887
 
     # Information from remote computer
-    ANACONDA_PATH=/home/pspenano/miniconda3          # TODO path to miniconda3 dir
-    USER=''                                          # TODO username
-    IPADDRESS=                                       # TODO ip
+    ANACONDA_PATH=          # TODO path to miniconda3 dir
+    USER=                   # TODO username
+    IPADDRESS=              # TODO ip
 
     projectpath=$1
     envname=$2
+
+    echo "Path to project in remote: $projectpath"
 
     if [ $1 = "stop" ]; then
         echo "Stopping...";
