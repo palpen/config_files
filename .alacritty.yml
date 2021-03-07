@@ -9,8 +9,14 @@ colors:
     soft contrast: background = '#32302f'
     foreground: '#ebdbb2'
 
-
 font:
   normal:
-    family: FantasqueSansMono
-  size: 28
+    family: Menlo
+  size: 22
+
+key_bindings:
+  - { key: Left,   mods: Alt,  chars: "\x1bb" } # one word left
+  - { key: Right,  mods: Alt,  chars: "\x1bf" } # one word right
+  - { key: F,      mods: Alt,  chars: "\x1bf" } # one word left
+  - { key: B,      mods: Alt,  chars: "\x1bb" } # one word right
+
