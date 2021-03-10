@@ -72,6 +72,7 @@ jnssh() {
     # Requirements:
     # 1. miniconda
     # 2. jupyter
+    # 3. Public key of local computer copied to remote host (use ssh-copy-id user@hostname)
 
     # Usage:
     # jnssh <project path in remote machine> <conda environment name in remote machine>
