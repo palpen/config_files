@@ -3,24 +3,16 @@
 ## Setup
 
 
-First, install the `vim-plug` package manager.
+First, install the `vim-plug` package manager by following [the instructions here](https://github.com/junegunn/vim-plug#installation)
 
-Create symbolic links from repository contents to the $HOME directory:
+- You may need to run `:PlugInstall` the first time you open vim in order to install the packages listed in your `.vimrc`
 
-```
-ln -s ~/config_files/.vimrc ~/.vimrc
-ln -s ~/config_files/.tmux.conf ~/.tmux.conf
-ln -s ~/config_files/.alacritty.yml ~/.alacritty.yml
-```
 
-Before running the commands below, make sure you follow the proper installation instructions for the oh-my-zsh plugins listed under `plugins` in the .zshrc file
+Second, install the oh-my-zsh plugins by following the installation instructions listed under `plugins` in the .zshrc file
+
+Finally, create symbolic links from repository contents to the $HOME directory by
 
 ```
-ln -s ~/config_files/.zshrc ~/.zshrc
-ln -s ~/config_files/zsh_profiles ~/zsh_profiles
-ln -s ~/config_files/palermo.zsh-theme ~/.oh-my-zsh/themes/palermo.zsh-theme
+sh create_symlinks.sh
 ```
-
-For the `.vimrc` to work properly, download and install `vim-plug` [here](https://github.com/junegunn/vim-plug).
-
 
