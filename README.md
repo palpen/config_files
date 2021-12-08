@@ -2,6 +2,9 @@
 
 ## Setup
 
+
+First, install the `vim-plug` package manager.
+
 Create symbolic links from repository contents to the $HOME directory:
 
 ```
