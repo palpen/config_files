@@ -43,6 +43,8 @@ alias ipyton='ipython'
 alias ipythn='ipython'
 alias ipythn='ipython'
 
+alias whoami="who am i"
+
 
 # zshmarks
 alias g="jump"
@@ -123,6 +125,6 @@ fswatch_rsync() {
     # Source: https://stackoverflow.com/a/38997026
     path_to_dir=$1
     host=$2
-    rsync -azrP --delete --exclude "*.git" --exclude "virtualenv_run" $path_to_dir $host:~/
-    fswatch -o $1 | while read f; do rsync -azrP --delete --exclude "*.git" --exclude "virtualenv_run" $path_to_dir $host:~/; done
+    rsync -azrP --delete --exclude "virtualenv_run" --exclude "*swp" --exclude "*swo" $path_to_dir $host:~/
+    fswatch -o $1 | while read f; do rsync -azrP --delete --exclude "virtualenv_run" --exclude "*swp" --exclude "*swo" $path_to_dir $host:~/; done
 }
