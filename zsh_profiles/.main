@@ -36,14 +36,16 @@ unset __conda_setup
 alias sc='open ~/Desktop/screenshots'
 
 alias zzz='pmset sleepnow'
-alias jn='jupyter notebook'
+alias whoami="who am i"
+alias vim="nvim"
 
+alias jn='jupyter notebook'
 alias ipy='ipython'
 alias ipyton='ipython'
 alias ipythn='ipython'
 alias ipythn='ipython'
 
-alias whoami="who am i"
+
 
 
 # zshmarks
