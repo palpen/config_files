@@ -29,6 +29,8 @@ set copyindent
 color desert
 syntax on
 
+" Set font size
+set guifont=Menlo\ Regular:h20
 
 " === Third-party packages and settings ===
 
