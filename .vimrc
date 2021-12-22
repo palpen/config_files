@@ -11,6 +11,7 @@ set visualbell
 set hlsearch
 set smartcase
 set ignorecase
+set cursorline
 set incsearch
 set autoindent
 set smartindent
@@ -34,6 +35,7 @@ syntax on
 " External packages managed using vim-plug
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " for vim-gitgutter
@@ -68,6 +70,11 @@ map <C-K> :bprev<CR>
 command! W :w
 command! Q :q
 
+" Remap movement across windows keys
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " === Functions ===
 
@@ -110,3 +117,6 @@ endif
 if maparg('<leader>*', 'v') == ''
   vmap <leader>* :<C-u>call <SID>VSetSearch()<CR>:execute 'noautocmd vimgrep /' . @/ . '/ **'<CR>
 endif
+
+" gruvbox color scheme
+autocmd vimenter * ++nested colorscheme gruvbox
