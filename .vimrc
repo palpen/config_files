@@ -2,16 +2,6 @@
 
 " Inspired by https://github.com/jvns/vimconfig/blob/master/vimrc
 
-" === Basic settings ===
-set showmatch
-set visualbell
-set ignorecase
-set incsearch
-set statusline=2
-set statusline=%f
-set ruler
-set copyindent
-
 
 " === General ====
 set belloff=all
@@ -20,6 +10,12 @@ set belloff=all
 " like <leader>w saves the current file
 let mapleader = ","
 let g:mapleader = ","
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
 
 
 " === Text, tab, and indentation ====
@@ -55,6 +51,7 @@ try
 catch
 endtry
 
+
 " === VIM UI ===
 
 " Highlight line cursor is on
@@ -87,6 +84,15 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+
+" Ignore case when searching
+set ignorecase
+
+" Highlight matches as it is typed in the search command
+set incsearch
+
+" Show matching bracket when cursor is over them
+set showmatch
 
 
 " === Third-party packages and settings ===
