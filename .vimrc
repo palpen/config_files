@@ -94,6 +94,13 @@ set incsearch
 " Show matching bracket when cursor is over them
 set showmatch
 
+" Highlight the current line only for the active window
+augroup BgHighlight
+    autocmd!
+    autocmd WinEnter * set cul
+    autocmd WinLeave * set nocul
+augroup END
+
 
 " === Third-party packages and settings ===
 
@@ -101,6 +108,7 @@ set showmatch
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'morhetz/gruvbox'
+Plug 'lukas-reineke/indent-blankline.nvim'  
 call plug#end()
 
 " for vim-gitgutter
