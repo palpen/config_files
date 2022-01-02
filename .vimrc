@@ -17,6 +17,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Change working directory whenever you open a file, switch buffers, open/close window
+set autochdir
+
 
 " === Text, tab, and indentation ====
 
@@ -217,6 +220,9 @@ fun! CopyAbsPath()
 endfun
 fun! CopyFilename()
     let @+ = expand("%:t")
+endfun
+fun! CopyDir()
+    let @+ = expand("%:p:h")
 endfun
 
 " Enables forward and backward search of word under cursor (or when visually
