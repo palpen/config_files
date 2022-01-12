@@ -165,6 +165,9 @@ au TabLeave * let g:lasttab = tabpagenr()
 " Super useful when editing files in the same directory
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
+" Open buffer list and prepare command to switch buffer
+nnoremap <leader>b :buffers t<CR>:buffer<space>
+
 
 " === Misc. aesthetics ===
 
