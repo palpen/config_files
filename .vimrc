@@ -20,6 +20,9 @@ set tm=500
 " Change working directory whenever you open a file, switch buffers, open/close window
 set autochdir
 
+" Disable swap files
+set noswapfile
+
 
 " === Text, tab, and indentation ====
 
