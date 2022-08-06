@@ -81,6 +81,8 @@ jnssh() {
 
     # Usage:
     # jnssh PATH_TO_VIRTUAL_ENV PATH_TO_WORKING_DIR USERNAME HOST
+    # You can find PATH_TO_VIRTUAL_ENV by `conda env list` on the server hosting
+    # the jupyter notebook session.
     # If you are using tiled, ~, as shortcut for the HOME path, you must use quotes
     # e.g. jnssh "~/personal/ds_project" ds_project
     # Notebook can be opened in local browser at http://localhost:8887
