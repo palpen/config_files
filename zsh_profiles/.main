@@ -123,6 +123,7 @@ fswatch_rsync() {
     # This enables you to work on code locally (e.g. on your laptop)
     # but have it compiled and run remotely (e.g. your devbox)
     # Usage: fswatch_rsync dir/in/local/i/want/to/sync username@host:~
+    # Requirements: fswatch, rsync (you can run `brew install <PACKAGE>` for these)
     # Source: https://stackoverflow.com/a/38997026
     path_to_dir=$1
     host=$2
