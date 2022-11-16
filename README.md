@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Install (neovim)[https://github.com/neovim/neovim]
+1. Install [neovim](https://github.com/neovim/neovim)
     - Configure neovim to use the config in `.vimrc` by copying and pasting
 
     ```
