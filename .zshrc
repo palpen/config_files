@@ -98,5 +98,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/zsh_profiles/.work_only
 source ~/zsh_profiles/.main
 
+# source local secrets (if exists)
+[[ -f ~/.secrets ]] && source ~/.secrets
+
 # Ensure $HOME/bin is at front of PATH (after all sources)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
