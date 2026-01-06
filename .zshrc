@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# (PATH set at end of file after all sources)
 
 
 # setopt HIST_FIND_NO_DUPS
@@ -97,3 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # source other profiles
 source ~/zsh_profiles/.work_only
 source ~/zsh_profiles/.main
+
+# Ensure $HOME/bin is at front of PATH (after all sources)
+export PATH=$HOME/bin:/usr/local/bin:$PATH

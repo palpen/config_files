@@ -1,6 +1,9 @@
+[window]
+option_as_alt = "OnlyLeft"
+
 [colors.primary]
 foreground = "#ebdbb2"
-"soft contrast" = "background = '#32302f'"
+background = "#32302f"
 
 [env]
 TERM = "xterm-256color"
@@ -22,11 +25,6 @@ key = "Right"
 mods = "Alt"
 
 [[keyboard.bindings]]
-chars = "\u001Bf"
-key = "F"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bb"
-key = "B"
+chars = "\u001bp"
+key = "P"
 mods = "Alt"
