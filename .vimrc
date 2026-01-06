@@ -108,22 +108,6 @@ augroup BgHighlight
 augroup END
 
 
-" === Third-party packages and settings ===
-
-" External packages managed using vim-plug
-call plug#begin()
-Plug 'airblade/vim-gitgutter'
-Plug 'morhetz/gruvbox'
-Plug 'lukas-reineke/indent-blankline.nvim'  
-call plug#end()
-
-" for vim-gitgutter
-set updatetime=100
-
-" gruvbox color scheme
-autocmd vimenter * ++nested colorscheme gruvbox
-
-
 " === New tab ===
 " Quickly open a buffer for scribble
 map <leader>t :tabnew<cr>

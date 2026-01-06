@@ -37,7 +37,6 @@ alias sc='open ~/Desktop'
 
 alias zzz='pmset sleepnow'
 alias whoami="who am i"
-alias vim="nvim"
 alias get_date="echo \"Copied date $(date +%F) to clipboard\"; date +%F | pbcopy"  # copy current date to clipboard
 
 alias jn='jupyter notebook'
