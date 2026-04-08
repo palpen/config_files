@@ -1,6 +1,6 @@
 # config_files
 
-Personal dotfiles for zsh, vim, tmux, and alacritty.
+Personal dotfiles for zsh, vim, tmux, and Ghostty.
 
 ## Setup
 
@@ -25,6 +25,7 @@ This file is sourced by `.zshrc` if it exists, but never committed.
 
 - `.zshrc` - zsh config with oh-my-zsh
 - `.vimrc` - vim config (no plugins required, works on remote servers)
-- `.alacritty.toml` - terminal emulator config
-- `.tmux.conf` - tmux config
+- `config.ghostty` - Ghostty terminal emulator config
+- `.tmux.conf` - tmux config (theme matched to Ghostty)
+- `palermo.zsh-theme` - custom oh-my-zsh theme
 - `zsh_profiles/` - modular zsh configs (`.main`, `.work_only`)
