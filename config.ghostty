@@ -1,0 +1,13 @@
+# Ghostty Configuration
+
+# Font
+font-family = JetBrains Mono
+font-size = 14
+
+# Window
+window-padding-x = 8
+window-padding-y = 8
+
+# macOS - treat Option as Alt for keybindings (forward/back word, etc.)
+macos-option-as-alt = true
+
