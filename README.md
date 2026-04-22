@@ -1,6 +1,6 @@
 # config_files
 
-Personal dotfiles for zsh, vim, tmux, and Ghostty.
+Personal dotfiles for zsh, vim, tmux, Ghostty, and Claude Code.
 
 ## Setup
 
@@ -29,3 +29,4 @@ This file is sourced by `.zshrc` if it exists, but never committed.
 - `.tmux.conf` - tmux config (theme matched to Ghostty)
 - `palermo.zsh-theme` - custom oh-my-zsh theme
 - `zsh_profiles/` - modular zsh configs (`.main`, `.work_only`)
+- `claude/settings.json` - Claude Code global settings (status line, plugins, permissions)

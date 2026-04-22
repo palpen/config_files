@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); cwd=$(echo \"$input\" | jq -r '.workspace.current_dir // .cwd'); folder=$(basename \"$cwd\"); branch=$(git --no-optional-locks -C \"$cwd\" branch --show-current 2>/dev/null); dirty=$(git --no-optional-locks -C \"$cwd\" status --porcelain 2>/dev/null); model=$(echo \"$input\" | jq -r '.model.display_name // empty'); used_pct=$(echo \"$input\" | jq -r '.context_window.used_percentage // empty'); if [ -n \"$branch\" ]; then if [ -n \"$dirty\" ]; then printf \"\\033[32m\\xE2\\x9E\\x9C\\033[0m  \\033[36m%s\\033[0m \\033[31mgit:(%s) \\xE2\\x9C\\x97\\033[0m\" \"$folder\" \"$branch\"; else printf \"\\033[32m\\xE2\\x9E\\x9C\\033[0m  \\033[36m%s\\033[0m \\033[31mgit:(%s)\\033[0m\" \"$folder\" \"$branch\"; fi; else printf \"\\033[32m\\xE2\\x9E\\x9C\\033[0m  \\033[36m%s\\033[0m\" \"$folder\"; fi; [ -n \"$model\" ] && printf \" \\033[35m%s\\033[0m\" \"$model\"; [ -n \"$used_pct\" ] && printf \" \\033[33mctx:%s%%\\033[0m\" \"$(printf '%.0f' \"$used_pct\")\""
+  },
+  "enabledPlugins": {
+    "vercel-plugin@vercel": true,
+    "vercel@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "filesystem": {}
+  },
+  "effortLevel": "xhigh",
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
+  "skipAutoPermissionPrompt": true,
+  "voiceEnabled": true
+}
