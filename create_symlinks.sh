@@ -6,5 +6,8 @@ ln -s ~/config_files/.zshrc ~/.zshrc
 ln -s ~/config_files/zsh_profiles ~/zsh_profiles
 ln -s ~/config_files/palermo.zsh-theme ~/.oh-my-zsh/themes/palermo.zsh-theme
 mkdir -p ~/.claude
-ln -s ~/config_files/claude/settings.json ~/.claude/settings.json
+# Claude Code mutates ~/.claude/settings.json at runtime (plugin toggles,
+# permission grants, model changes), so copy instead of symlink. Re-copy
+# manually when you update the version-controlled template.
+cp -n ~/config_files/claude/settings.json ~/.claude/settings.json
 
