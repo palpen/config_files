@@ -101,5 +101,8 @@ source ~/zsh_profiles/.main
 # source local secrets (if exists)
 [[ -f ~/.secrets ]] && source ~/.secrets
 
+# source machine-local config (not tracked in git)
+[[ -f ~/zsh_profiles/.local ]] && source ~/zsh_profiles/.local
+
 # Ensure $HOME/bin is at front of PATH (after all sources)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
