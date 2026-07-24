@@ -34,5 +34,5 @@ This file is sourced by `.zshrc` if it exists, but never committed.
 - `config.ghostty` - Ghostty terminal emulator config
 - `.tmux.conf` - tmux config (theme matched to Ghostty, uses TPM + tmux-resurrect)
 - `palermo.zsh-theme` - custom oh-my-zsh theme
-- `zsh_profiles/` - modular zsh configs (`.main`, `.work_only`)
+- `zsh_profiles/` - modular zsh configs (`.main`; `.work_only` and `.local` are machine-local, gitignored)
 - `claude/settings.json` - Claude Code global settings (status line, plugins, permissions)

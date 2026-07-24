@@ -95,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # source other profiles
-source ~/zsh_profiles/.work_only
+[[ -f ~/zsh_profiles/.work_only ]] && source ~/zsh_profiles/.work_only
 source ~/zsh_profiles/.main
 
 # source local secrets (if exists)
