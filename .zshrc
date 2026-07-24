@@ -104,5 +104,23 @@ source ~/zsh_profiles/.main
 # source machine-local config (not tracked in git)
 [[ -f ~/zsh_profiles/.local ]] && source ~/zsh_profiles/.local
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/nail/home/pspenano/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/nail/home/pspenano/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/nail/home/pspenano/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/nail/home/pspenano/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/nail/home/pspenano/.npm-prefix/bin:$PATH"
+
 # Ensure $HOME/bin is at front of PATH (after all sources)
 export PATH=$HOME/bin:/usr/local/bin:$PATH

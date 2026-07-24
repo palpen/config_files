@@ -137,3 +137,8 @@ fswatch_rsync() {
         $path_to_dir $host; 
     done
 }
+
+start_jira_mcp() {
+    echo "Starting JIRA MCP"
+    claude mcp add --transport http yelp-jira http://localhost:5001/jira_mcp/mcp
+}
