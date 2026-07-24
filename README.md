@@ -12,9 +12,15 @@ cd ~/config_files
 sh create_symlinks.sh
 ```
 
-3. Install oh-my-zsh plugins listed in `.zshrc` (clone repos into `~/.oh-my-zsh/plugins/`)
+3. Install [TPM](https://github.com/tmux-plugins/tpm) for tmux plugin management:
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+Then inside tmux, press `prefix + I` to install plugins.
 
-4. (Optional) Create `~/.secrets` for API keys and sensitive exports:
+4. Install oh-my-zsh plugins listed in `.zshrc` (clone repos into `~/.oh-my-zsh/plugins/`)
+
+5. (Optional) Create `~/.secrets` for API keys and sensitive exports:
 ```
 # ~/.secrets
 export OPENAI_API_KEY="your-key-here"
@@ -26,7 +32,7 @@ This file is sourced by `.zshrc` if it exists, but never committed.
 - `.zshrc` - zsh config with oh-my-zsh
 - `.vimrc` - vim config (no plugins required, works on remote servers)
 - `config.ghostty` - Ghostty terminal emulator config
-- `.tmux.conf` - tmux config (theme matched to Ghostty)
+- `.tmux.conf` - tmux config (theme matched to Ghostty, uses TPM + tmux-resurrect)
 - `palermo.zsh-theme` - custom oh-my-zsh theme
 - `zsh_profiles/` - modular zsh configs (`.main`, `.work_only`)
 - `claude/settings.json` - Claude Code global settings (status line, plugins, permissions)
