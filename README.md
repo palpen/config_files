@@ -36,3 +36,8 @@ This file is sourced by `.zshrc` if it exists, but never committed.
 - `palermo.zsh-theme` - custom oh-my-zsh theme
 - `zsh_profiles/` - modular zsh configs (`.main`; `.work_only` and `.local` are machine-local, gitignored)
 - `claude/settings.json` - Claude Code global settings (status line, plugins, permissions)
+
+
+## License
+
+Original work is licensed under the [MIT License](LICENSE), Copyright (c) 2026 Palermo Penano. The grant is limited to the work identified in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md); the exclusions and separate third-party terms there apply.
